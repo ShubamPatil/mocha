@@ -1,0 +1,25 @@
+{
+  "name": "mochatry",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --timeout 180000"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.4",
+    "chai-http": "^4.3.0",
+    "mocha": "^8.3.2",
+    "spawn-npm-install": "^1.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShubamPatil/Load-Sim-Automation1.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ShubamPatil/Load-Sim-Automation1/issues"
+  },
+  "homepage": "https://github.com/ShubamPatil/Load-Sim-Automation1#readme",
+  "description": ""
+}
