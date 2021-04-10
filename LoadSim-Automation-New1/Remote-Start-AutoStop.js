@@ -29,7 +29,7 @@ describe('-----Test Case - 021-----', function () {
             }
 
             if (chunk.includes("Stopped charging")) {
-                const endDatetime = new Date();
+                // const endDatetime = new Date();
                 CheckInvoice(transID);
                 done();
             }
