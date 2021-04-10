@@ -41,7 +41,7 @@
                         "Unit": "kWh",
                         "RandomValues": false,
                         "Payload_Config": "RemoteStartAutoStop.json",
-                        "No_of_MeterValues": 4,
+                        "No_of_MeterValues": 2,
                         "Active": true
                     },
                     "Connector-4": {
