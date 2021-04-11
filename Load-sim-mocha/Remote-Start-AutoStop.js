@@ -21,7 +21,7 @@ describe('-----Test Case - 021-----', function () {
 
             if (chunk.includes("transactionId") && flag === true) {
                 transID = chunk.split("transactionId:")[1].trim().split(/[ .:;?!~,`"&|()<>{}\[\]\r\n/\\]+/)[0];
-                // flag = false;
+                flag = false;
                 console.log(transID);
             }
         })
