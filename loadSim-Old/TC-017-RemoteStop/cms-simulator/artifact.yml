@@ -1,4 +1,0 @@
----
-docker_image:
-    name: "<service_name>"
-    tag: "<service_version>" 
