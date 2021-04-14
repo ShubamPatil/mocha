@@ -4,9 +4,15 @@ const { expect } = require("chai");
 const d = new Date();
 let a = d.toDateString(), parts = a.split(" ");
 const date = parts[2], day = parts[0], month = parts[1], year = parts[3];
+var ID = require('./RemoteStartStop');
+var transID;
 
+module.exports.checkInvoiceGenerated = function () {
+    console.log("remote stop");
+    // console.log(ID);
+    transID = ID.transID;
+    // console.log("invoice "+transID);
 
-module.exports.checkInvoiceGenerated = function (transID) {
     return chai.request('https://testcms1.numocity.com:4003/')
         .get(`transaction/get/v1?fromDate=${day}%20${month}%20${date}%20${year}%2001:01:01%20GMT+0530%20(India%20Standard%20Time)&toDate=${day}%20${month}%20${date}%20${year}%2023:59:59%20GMT+0530%20(India%20Standard%20Time)`)
         .set('Content-Type', 'application/json')
